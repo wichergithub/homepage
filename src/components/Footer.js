@@ -3,7 +3,7 @@ import style from '../css/footer.module.css'
 import {Link} from 'gatsby'
 import links from '../constants/links'
 import socialIcons from '../constants/social-icons'
-import { FaRPoject } from 'react-icons/fa'
+
 function Footer() {
   return (
     <footer className={style.footer}>

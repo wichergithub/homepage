@@ -4,7 +4,7 @@ import style from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
-import logo from "../images/logo.svg"
+import logo from "../images/logo2.svg"
 const Navbar = () => {
 const [isOpen, setNav] = useState(false)
 const toggleNav = ()=> {
@@ -14,7 +14,7 @@ const toggleNav = ()=> {
     <nav className={style.navbar}>
         <div className={style.navCenter}>
             <div className={style.navHeader}>
-                <img src={logo} alt="logo" />
+                <img className={style.navLogo} src={logo} alt="logo" />
                 <button type="button" className={style.logoBtn} onClick={toggleNav}>
                     <FaAlignRight className={style.logoIcon} /> 
                 </button>
