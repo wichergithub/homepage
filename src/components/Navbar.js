@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import { Link } from "gatsby"
+import links from "../constants/links"
 import style from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
-import links from "../constants/links"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import socialIcons from "../constants/social-icons"
 import logo from "../images/logo2.svg"
 const Navbar = () => {
@@ -21,7 +21,7 @@ const toggleNav = ()=> {
             </div>
             <ul className={isOpen?`${style.navLinks} ${style.showNav}`:`${style.navLinks}`}>
             {links.map((item,index)=>{
-                return(<li key={index}><Link to={item.path}>{item.text}</Link> </li>)
+                return(<li key={index}><AniLink fade to={item.path}>{item.text}</AniLink> </li>)
             })}
             </ul>
             <div className={style.navSocialLinks}>

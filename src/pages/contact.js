@@ -2,13 +2,14 @@ import React from 'react'
 import Layout from "../components/Layout"
 import StyledHero from '../components/StyledHero'
 import {graphql} from "gatsby"
+import Contact from "../components/Contact/Contact"
 
 function contact({data}) {
   return (
     <Layout>
-      <StyledHero  img={data.defaultBcg.childImageSharp.fluid} >
-            
-        </StyledHero>
+      <StyledHero  img={data.defaultBcg.childImageSharp.fluid} />
+      <Contact />
+      
     </Layout>
   )
 }
