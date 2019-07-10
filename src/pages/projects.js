@@ -15,9 +15,9 @@ export default class projects extends Component {
 
 export const query = graphql`
 query{
-    defaultBcg:file(relativePath:{eq:"main_projects.jpeg"}){
+    defaultBcg:file(relativePath:{eq:"projects_main.jpeg"}){
       childImageSharp{
-        fluid(maxWidth:4160, quality:90, grayscale: true){
+        fluid(maxWidth:4160, quality:90){
             ...GatsbyImageSharpFluid_withWebp
         }
       }
