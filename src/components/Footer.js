@@ -14,7 +14,7 @@ function Footer() {
             {socialIcons.map((item,index)=>{return <a href={item.link} key={index} target="_blank" rel="noopener noreferrer">{item.icon}</a>})}
         </div>
         <div className={style.copyright}>
-            Copyright &copy; QM Design GmbH {new Date().getFullYear()} all rights reserved.
+            Copyright &copy; QM Dev GmbH {new Date().getFullYear()} all rights reserved.
         </div>
     </footer>
   )

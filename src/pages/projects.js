@@ -1,12 +1,26 @@
 import React, { Component } from 'react'
 import Layout from "../components/Layout"
+import StyledHero from '../components/StyledHero'
+import {graphql} from "gatsby"
 
 export default class projects extends Component {
   render() {
     return (
       <Layout>
-        hello from projects pages
+        <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
       </Layout>
     )
   }
 }
+
+export const query = graphql`
+query{
+    defaultBcg:file(relativePath:{eq:"main_projects.jpeg"}){
+      childImageSharp{
+        fluid(maxWidth:4160, quality:90, grayscale: true){
+            ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`

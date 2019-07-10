@@ -1,12 +1,27 @@
 import React from 'react'
 import Layout from "../components/Layout"
+import StyledHero from '../components/StyledHero'
+import {graphql} from "gatsby"
 
-function contact() {
+function contact({data}) {
   return (
     <Layout>
-      my contact details are secret biatch!
+      <StyledHero  img={data.defaultBcg.childImageSharp.fluid} >
+            
+        </StyledHero>
     </Layout>
   )
 }
 
 export default contact
+export const query = graphql`
+query{
+    defaultBcg:file(relativePath:{eq:"main_hero.png"}){
+      childImageSharp{
+        fluid(maxWidth:4160, quality:90){
+            ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
