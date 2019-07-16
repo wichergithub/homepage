@@ -5,6 +5,7 @@ import Banner from '../components/Banner'
 import About from '../components/Home/About'
 import Services from '../components/Home/Services'
 import StyledHero from '../components/StyledHero'
+import FeaturedProjects from "../components/Home/FeaturedProjects"
 import {graphql} from "gatsby"
 
 export default ({data}) => 
@@ -17,6 +18,7 @@ export default ({data}) =>
         </StyledHero>
         <About />
         <Services />
+        <FeaturedProjects />
     </Layaout>
     )
 
