@@ -48,6 +48,7 @@
 .footer h3 {
   text-transform: capitalize;
   margin-bottom: 0;
+  text-align: center;
 }
 .info {
   display: flex;
@@ -63,7 +64,7 @@
 }
 .git {
   text-transform: capitalize;
-  color: var(--primaryColor);
+  color: var(--darkGrey);
   display: flex;
   align-items: center;
 }
@@ -71,7 +72,7 @@
   margin-right: 0.4rem;
 }
 .details a {
-  color: var(--darkGrey);
+  color: var(--primaryColor);
   text-transform: uppercase;
   text-align: center;
 }

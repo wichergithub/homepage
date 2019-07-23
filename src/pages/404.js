@@ -1,15 +1,20 @@
-import React from 'react'
+import React from "react"
 import Layout from "../components/Layout"
 import styles from "../css/error.module.css"
-import Banner from '../components/Banner'
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Banner from "../components/Banner"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const error = () => {
   return (
     <Layout>
       <header className={styles.error}>
-        <Banner title="Error, Error!" info="Haslo nieprawidlowe">
-          <AniLink className="btn-white" to="/" >GO HOME UR DRUNK!</AniLink>
+        <Banner
+          title="Not the site you belong"
+          info="Take me home, country roads to the "
+        >
+          <AniLink className="btn-white" to="/">
+            SITE I BELONG
+          </AniLink>
         </Banner>
       </header>
     </Layout>
