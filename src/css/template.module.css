@@ -1,6 +1,9 @@
 .template {
   padding: 4rem 0;
 }
+a {
+  color: var(--mainBlack);
+}
 .center {
   width: 80vw;
   margin: 0 auto;
@@ -16,9 +19,10 @@
   box-shadow: var(--lightShadow);
 }
 .template h2 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 1rem;
+  color: var(--primaryColor);
 }
 .info {
   display: flex;
@@ -28,7 +32,7 @@
   display: flex;
   align-items: center;
   margin-right: 2rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .icon {
   color: var(--primaryColor);
@@ -39,14 +43,15 @@
   line-height: 2;
 }
 .template h4 {
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+.title {
+  color: var(--primaryColor);
 }
 .template h2 {
   margin: 2rem 0;
 }
-.journey {
-  margin: 3rem 0;
-}
+
 @media screen and (min-width: 992px) {
   .journey,
   .desc {

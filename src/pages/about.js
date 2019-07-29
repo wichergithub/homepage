@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
+import { graphql } from "gatsby"
 
-const about = ({data}) => {
+const about = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.defaultBcg.childImageSharp.fluid} />
@@ -13,11 +14,11 @@ const about = ({data}) => {
 export default about
 
 export const query = graphql`
-query{
-    defaultBcg:file(relativePath:{eq:"main_about.jpeg"}){
-      childImageSharp{
-        fluid(maxWidth:4160, quality:90){
-            ...GatsbyImageSharpFluid_withWebp
+  query {
+    defaultBcg: file(relativePath: { eq: "main_about.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 4160, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

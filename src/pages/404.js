@@ -10,10 +10,10 @@ const error = () => {
       <header className={styles.error}>
         <Banner
           title="Not the site you belong"
-          info="Take me home, country roads to the "
+          info="Country roads take me home, to the "
         >
           <AniLink className="btn-white" to="/">
-            SITE I BELONG
+            PLACE I BELONG
           </AniLink>
         </Banner>
       </header>
