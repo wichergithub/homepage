@@ -82,10 +82,10 @@ export const query = graphql`
           ...GatsbyContentfulFluid
         }
       }
-      mainTech
       details {
         details
       }
+      mainTech
     }
   }
 `

@@ -17,7 +17,7 @@ const getProjects = graphql`
           mainTech
           images {
             fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }
