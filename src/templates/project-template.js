@@ -18,8 +18,10 @@ const Template = ({ data }) => {
     tech,
     details: { details },
   } = data.proj
+  console.log(images)
 
   const [mainImage, ...projectImages] = images
+  console.log(mainImage)
 
   return (
     <Layout>
@@ -77,7 +79,7 @@ export const query = graphql`
       tech
       images {
         fluid {
-          src
+          ...GatsbyContentfulFluid
         }
       }
       mainTech
