@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 import { FaGithub, FaGlobe } from "react-icons/fa"
 import Day from "../components/SingleProject/Day"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-
+import Banner from "../components/Banner"
 const Template = ({ data }) => {
   const {
     name,
@@ -25,7 +25,9 @@ const Template = ({ data }) => {
 
   return (
     <Layout>
-      <StyledHero img={mainImage.fluid} />
+      <StyledHero temp="true" img={mainImage.fluid}>
+        <Banner title={name}></Banner>
+      </StyledHero>
       <section className={styles.template}>
         <div className={styles.center}>
           <div className={styles.images}>
@@ -55,7 +57,7 @@ const Template = ({ data }) => {
               </a>
             </p>
           </div>
-          <h4>Tech:{tech}</h4>
+          <h4>Tech: {tech}</h4>
           <h2>Description</h2>
           <p className={styles.desc}>
             Detailed description of the app comes soon. Stay tuned or send me an
