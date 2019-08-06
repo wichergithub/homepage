@@ -59,10 +59,7 @@ const Template = ({ data }) => {
           </div>
           <h4>Tech: {tech}</h4>
           <h2>Description</h2>
-          <p className={styles.desc}>
-            Detailed description of the app comes soon. Stay tuned or send me an
-            email if you want to know more!
-          </p>
+          <p className={styles.desc}>{details}</p>
           <AniLink fade to="/projects" className="btn-primary">
             Back to projects
           </AniLink>
