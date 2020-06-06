@@ -17,8 +17,8 @@ export default ({data}) =>
             </Banner>
         </StyledHero>
         <About />
-        <Services />
-        <FeaturedProjects />
+        {/* <Services /> */}
+        {/* <FeaturedProjects /> */}
     </Layaout>
     )
 
