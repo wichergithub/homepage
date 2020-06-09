@@ -12,7 +12,7 @@ export default ({data}) =>
     (
     <Layaout>
         <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid} >
-            <Banner title="Wicher jest Fajny" info="Classy feel with a modern touch and futuristic technology">
+            <Banner title="Wicher jest bardzo chyba Fajny" info="Classy feel with a modern touch and futuristic technology">
                 <AniLink fade to="/projects" className='btn-white'>Show me more!</AniLink>
             </Banner>
         </StyledHero>
