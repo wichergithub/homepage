@@ -8,8 +8,8 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata:{
-    title:"QMDesign",
-    desription:"There is thousands of developers on the market right now, let me convince you that I am the one worth your time, money can be replaced.",
+    title:"ExcelandWicher",
+    desription:"Excel",
     author:"@Ariel Sawicki"
   },
   plugins: [
